@@ -6,6 +6,7 @@
     [ProcessouArquivo]        BIT           NOT NULL,
     [DataFimProcessamento]    DATETIME2 (7) NULL,
     [DataInicioProcessamento] DATETIME2 (7) NULL,	
-	[Teste]					BIT NULL
+	[Teste]					BIT NULL,
+	[TESTE2] bit null
 );
 
