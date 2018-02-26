@@ -1,0 +1,19 @@
+﻿CREATE TABLE [Qlikview].[StageDMFinanceiro_Actual_OLD] (
+    [IDSTGDMFIN_Actual]           INT             IDENTITY (1, 1) NOT NULL,
+    [ANO_MES_COMPETENCIA]         INT             NULL,
+    [CD_PLANO_CONTAS]             BIGINT          NULL,
+    [CD_CENTRO_CUSTO]             BIGINT          NULL,
+    [CD_EMPRESA_ORIGEM]           VARCHAR (2)     NULL,
+    [CD_AGRUPAMENTO_AREA_VG1]     VARCHAR (6)     NULL,
+    [CD_AGRUPAMENTO_DESPESA_VG2]  VARCHAR (6)     NULL,
+    [CD_AGRUPAMENTO_PACOTE_VG3]   VARCHAR (6)     NULL,
+    [CD_AGRUPAMENTO_BALANCO_VG4]  VARCHAR (6)     NULL,
+    [CD_PRODUTOS_N1]              VARCHAR (10)    NULL,
+    [CD_PRODUTOS_N2]              VARCHAR (10)    NULL,
+    [CD_PRODUTOS_N3]              VARCHAR (10)    NULL,
+    [CD_PRODUTOS_COMERCIALIZADOS] VARCHAR (10)    NULL,
+    [VL_REALIZADO_CREDITO]        DECIMAL (19, 2) NULL,
+    [VL_REALIZADO_DEBITO]         DECIMAL (19, 2) NULL,
+    PRIMARY KEY CLUSTERED ([IDSTGDMFIN_Actual] ASC) ON [PRIMARY]
+);
+

@@ -1,0 +1,4 @@
+﻿CREATE PARTITION FUNCTION [_dta_pf__5344](INT)
+    AS RANGE
+    FOR VALUES (2, 5, 6, 9, 10, 11, 12, 13, 14, 15, 16);
+

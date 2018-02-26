@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [VendaNova]
+    AUTHORIZATION [dbo];
+

@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[TMP_CCA] (
+    [CO_CCA]      VARCHAR (500) NULL,
+    [NU_CNPJ_CCA] VARCHAR (500) NULL,
+    [NO_CCA]      VARCHAR (500) NULL
+);
+

@@ -1,0 +1,6 @@
+﻿CREATE TABLE [Dados].[TipoProduto] (
+    [ID]        TINYINT      NOT NULL,
+    [Descricao] VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 100, DATA_COMPRESSION = PAGE)
+);
+

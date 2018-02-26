@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [PARCORRETORA\CarlosPessanha]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

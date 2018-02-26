@@ -1,0 +1,28 @@
+﻿CREATE TABLE [PowerBI].[HomologacaoTemMaisCaixaDMSF] (
+    [IDTemMaisCaixaDMSF]       INT           IDENTITY (1, 1) NOT NULL,
+    [ChaveUnicaTMC]            VARCHAR (200) NULL,
+    [IDTMC]                    VARCHAR (18)  NULL,
+    [CodigoAgencia]            VARCHAR (10)  NULL,
+    [Agencia]                  VARCHAR (255) NULL,
+    [TipoUnidade]              VARCHAR (20)  NULL,
+    [Ano]                      INT           NULL,
+    [Mes]                      INT           NULL,
+    [DataReferencia]           DATE          NULL,
+    [DataArquivo]              DATE          NULL,
+    [QtdOfertasTotal_DM]       INT           NULL,
+    [QtdOfertasTotal_SF]       INT           NULL,
+    [VerificaQtdOfertasTotal]  INT           NULL,
+    [QtdTransacoes_DM]         INT           NULL,
+    [QtdTransacoes_SF]         INT           NULL,
+    [VerificaQtdTransacoes]    INT           NULL,
+    [TransacaoBancaria]        VARCHAR (50)  NULL,
+    [QtdRegistro_DM]           INT           NULL,
+    [QtdRegistro_SF]           INT           NULL,
+    [VerificaQtdRegistro]      INT           NULL,
+    [ImagemValidacao]          VARCHAR (200) NULL,
+    [StatusValidacao]          VARCHAR (20)  NULL,
+    [DataAtualizacaoValidador] DATETIME      NULL,
+    [DataFimEnvio]             DATETIME      NULL,
+    PRIMARY KEY CLUSTERED ([IDTemMaisCaixaDMSF] ASC) ON [PRIMARY]
+);
+

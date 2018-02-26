@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [PARCORRETORA\joaokuramoto]
+    FROM WINDOWS WITH DEFAULT_DATABASE = [Corporativo], DEFAULT_LANGUAGE = [us_english];
+

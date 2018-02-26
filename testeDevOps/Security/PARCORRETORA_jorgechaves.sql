@@ -1,0 +1,2 @@
+﻿CREATE USER [PARCORRETORA\jorgechaves] FOR LOGIN [PARCORRETORA\jorgechaves];
+

@@ -1,0 +1,7 @@
+﻿CREATE TABLE [Dados].[TipoEmpresaSaude] (
+    [ID]     SMALLINT     IDENTITY (1, 1) NOT NULL,
+    [Nome]   VARCHAR (30) NOT NULL,
+    [Codigo] VARCHAR (2)  NOT NULL,
+    CONSTRAINT [PK_TipoEmpresaSaude_ID] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 100, DATA_COMPRESSION = PAGE)
+);
+

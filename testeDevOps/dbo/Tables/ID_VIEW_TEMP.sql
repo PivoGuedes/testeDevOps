@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[ID_VIEW_TEMP] (
+    [ID] BIGINT NOT NULL
+);
+

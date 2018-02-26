@@ -1,0 +1,7 @@
+﻿CREATE TABLE [PowerBI].[BaseFuncionariosPMW] (
+    [EMPRESA]   NVARCHAR (255) NULL,
+    [MATRICULA] FLOAT (53)     NULL,
+    [NOME]      NVARCHAR (255) NULL,
+    [CARGO]     NVARCHAR (255) NULL
+) ON [PRIMARY];
+

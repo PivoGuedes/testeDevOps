@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [PARCORRETORA\pardevsql9]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

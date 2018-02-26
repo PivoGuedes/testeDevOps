@@ -1,0 +1,25 @@
+﻿CREATE TABLE [Marketing].[RetencaoAuto] (
+    [ID]                  BIGINT        IDENTITY (1, 1) NOT NULL,
+    [IDContrato]          BIGINT        NOT NULL,
+    [CodigoCliente]       BIGINT        NOT NULL,
+    [IDProduto]           INT           NOT NULL,
+    [IDEndosso]           BIGINT        NULL,
+    [IDAgencia]           SMALLINT      NOT NULL,
+    [Parcela]             INT           DEFAULT ((0)) NOT NULL,
+    [DataCancelamento]    DATE          NULL,
+    [DataSelecao]         DATE          NULL,
+    [AnoFabricacao]       INT           NULL,
+    [AnoModelo]           INT           NULL,
+    [Placa]               VARCHAR (10)  NULL,
+    [TelefoneComercial]   VARCHAR (20)  NULL,
+    [TelefoneResidencial] VARCHAR (20)  NULL,
+    [TelefoneCelular]     VARCHAR (20)  NULL,
+    [Email]               VARCHAR (200) NULL,
+    [DataArquivo]         DATE          NULL,
+    CONSTRAINT [PK_RetencaoAuto] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 90),
+    CONSTRAINT [FK_Agencia_RetencaoAuto] FOREIGN KEY ([IDAgencia]) REFERENCES [Dados].[Unidade] ([ID]),
+    CONSTRAINT [FK_Contrato_RetencaoAuto] FOREIGN KEY ([IDContrato]) REFERENCES [Dados].[Contrato] ([ID]),
+    CONSTRAINT [FK_Endosso_RetencaoAuto] FOREIGN KEY ([IDEndosso]) REFERENCES [Dados].[Endosso] ([ID]),
+    CONSTRAINT [FK_Produto_RetencaoAuto] FOREIGN KEY ([IDProduto]) REFERENCES [Dados].[Produto] ([ID])
+);
+

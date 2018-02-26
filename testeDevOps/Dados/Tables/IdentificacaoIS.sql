@@ -1,0 +1,6 @@
+﻿CREATE TABLE [Dados].[IdentificacaoIS] (
+    [ID]        TINYINT      NOT NULL,
+    [Descricao] VARCHAR (40) NULL,
+    CONSTRAINT [PK_IdentificacaoIS] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 100, DATA_COMPRESSION = PAGE)
+);
+

@@ -1,0 +1,27 @@
+﻿CREATE TABLE [Dados].[ContratoConsorcio] (
+    [ID]                              INT             IDENTITY (1, 1) NOT NULL,
+    [IDContrato]                      INT             NOT NULL,
+    [NUMERO_GRUPO]                    INT             NULL,
+    [NUMERO_COTA]                     INT             NULL,
+    [NUMERO_VERSAO]                   INT             NULL,
+    [BRANCOS]                         VARCHAR (20)    NULL,
+    [DIA_VENCIMENTO]                  TINYINT         NULL,
+    [IDTipoPagamentoConsorcio]        INT             NULL,
+    [IDAgencia]                       INT             NULL,
+    [OPERACAO]                        INT             NULL,
+    [CONTA]                           BIGINT          NULL,
+    [DIGITO]                          TINYINT         NULL,
+    [IDVendedor]                      INT             NULL,
+    [IDOrigemVendaConsorcio]          INT             NULL,
+    [DATA_PAGAMENTO_PRIMEIRA_PARCELA] DATE            NULL,
+    [PRAZO_GRUPO_MESES]               SMALLINT        NULL,
+    [PRAZO_COTA_MESES]                SMALLINT        NULL,
+    [VALOR_DATA_VENDA]                DECIMAL (19, 2) NULL,
+    [VALOR_CREDITO_ATUALIZADO]        DECIMAL (19, 2) NULL,
+    [DATA_CONTEMPLACAO]               DATE            NULL,
+    [DATA_CONFIRMACAO]                DATE            NULL,
+    [ORIGEM]                          SMALLINT        NULL,
+    [BRANCOS_B]                       VARCHAR (200)   NULL,
+    CONSTRAINT [PK__Contrato__3214EC2734F08EA6] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 100, DATA_COMPRESSION = PAGE)
+);
+

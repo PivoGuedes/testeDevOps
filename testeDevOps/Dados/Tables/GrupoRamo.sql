@@ -1,0 +1,6 @@
+﻿CREATE TABLE [Dados].[GrupoRamo] (
+    [ID]        TINYINT      NOT NULL,
+    [Descricao] VARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_GrupoRamo] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 100, DATA_COMPRESSION = PAGE)
+);
+

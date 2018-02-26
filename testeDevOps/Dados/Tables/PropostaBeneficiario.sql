@@ -1,0 +1,25 @@
+﻿CREATE TABLE [Dados].[PropostaBeneficiario] (
+    [ID]                     BIGINT         IDENTITY (1, 1) NOT NULL,
+    [IDProposta]             BIGINT         NOT NULL,
+    [Nome]                   VARCHAR (140)  NOT NULL,
+    [CPFCNPJ]                VARCHAR (18)   NULL,
+    [DataNascimento]         DATE           NULL,
+    [IDSexo]                 TINYINT        NULL,
+    [IDEstadoCivil]          TINYINT        NULL,
+    [IDParentesco]           TINYINT        NOT NULL,
+    [PercentualFGB]          NUMERIC (5, 2) NULL,
+    [PercentualPeculio]      NUMERIC (5, 2) NULL,
+    [PercentualPensao]       NUMERIC (5, 2) NULL,
+    [PercentualParticipacao] NUMERIC (5, 2) NULL,
+    [QuantidadeTitulos]      SMALLINT       NULL,
+    [DataArquivo]            DATE           NULL,
+    [Arquivo]                VARCHAR (80)   NULL,
+    [NumeroOrdemTitular]     INT            NULL,
+    CONSTRAINT [PK_BeneficiarioProposta] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 100, DATA_COMPRESSION = PAGE),
+    CONSTRAINT [FK_BeneficiarioProposta_Proposta] FOREIGN KEY ([IDProposta]) REFERENCES [Dados].[Proposta] ([ID]),
+    CONSTRAINT [FK_PROPOSTA_BEN_ESTADOCIVIL] FOREIGN KEY ([IDEstadoCivil]) REFERENCES [Dados].[EstadoCivil] ([ID]),
+    CONSTRAINT [FK_PROPOSTA_BEN_PARENTESCO] FOREIGN KEY ([IDParentesco]) REFERENCES [Dados].[Parentesco] ([ID]),
+    CONSTRAINT [FK_PROPOSTA_BEN_SEXO] FOREIGN KEY ([IDSexo]) REFERENCES [Dados].[Sexo] ([ID]),
+    CONSTRAINT [UNQ_BeneficiarioProposta_IDs] UNIQUE NONCLUSTERED ([IDProposta] ASC, [Nome] ASC, [IDParentesco] ASC) WITH (FILLFACTOR = 100, DATA_COMPRESSION = PAGE)
+);
+

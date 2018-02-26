@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [Dados]
+    AUTHORIZATION [dbo];
+

@@ -1,0 +1,26 @@
+﻿CREATE TABLE [Extracao].[EXTRACAOVIDA] (
+    [IDContrato]           BIGINT          NULL,
+    [IDCertificado]        INT             NULL,
+    [NumeroContrato]       VARCHAR (24)    NULL,
+    [NumeroCertificado]    VARCHAR (20)    NULL,
+    [NumeroBilhete]        VARCHAR (20)    NULL,
+    [NumeroProposta]       VARCHAR (20)    NULL,
+    [IDProduto]            INT             NULL,
+    [CodigoComercializado] VARCHAR (5)     NOT NULL,
+    [NomeProduto]          VARCHAR (100)   NULL,
+    [ValorBase]            DECIMAL (38, 6) NULL,
+    [ValorComissao]        DECIMAL (38, 6) NULL,
+    [ValorPremioTotal]     NUMERIC (16, 2) NULL,
+    [Valor]                DECIMAL (24, 4) NULL,
+    [NumeroEndosso]        INT             NULL,
+    [AgenciaVenda]         SMALLINT        NULL,
+    [UnidadeVenda]         SMALLINT        NULL,
+    [IDUnidadeVenda]       SMALLINT        NULL,
+    [IDAgenciaVenda]       SMALLINT        NULL,
+    [NumeroParcela]        SMALLINT        NULL,
+    [DataQuitacaoParcela]  DATE            NULL,
+    [DataCalculo]          DATE            NULL,
+    [CanalVenda]           VARCHAR (80)    NULL,
+    [IDOperacao]           TINYINT         NULL
+);
+

@@ -1,0 +1,11 @@
+﻿CREATE ROLE [db_CRM]
+    AUTHORIZATION [dbo];
+
+
+GO
+ALTER ROLE [db_CRM] ADD MEMBER [PARCORRETORA\CleomarPestilli];
+
+
+GO
+ALTER ROLE [db_CRM] ADD MEMBER [UsrCRM];
+

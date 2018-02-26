@@ -1,0 +1,8 @@
+﻿CREATE TABLE [ControleDados].[PontoParada] (
+    [ID]           SMALLINT      IDENTITY (1, 1) NOT NULL,
+    [NomeEntidade] VARCHAR (100) NOT NULL,
+    [PontoParada]  VARCHAR (400) NULL,
+    CONSTRAINT [PK_PontoParada_ID] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 100, DATA_COMPRESSION = PAGE),
+    CONSTRAINT [UNQ_PontoParada_NomeEntidade] UNIQUE NONCLUSTERED ([NomeEntidade] ASC) WITH (FILLFACTOR = 100, DATA_COMPRESSION = PAGE)
+);
+

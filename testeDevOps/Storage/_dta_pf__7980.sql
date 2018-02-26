@@ -1,0 +1,4 @@
+﻿CREATE PARTITION FUNCTION [_dta_pf__7980](SMALLINT)
+    AS RANGE
+    FOR VALUES (1, 3, 5, 6, 7, 8);
+

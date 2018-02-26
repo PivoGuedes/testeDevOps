@@ -1,0 +1,7 @@
+﻿CREATE TABLE [Dados].[Pacote] (
+    [ID]        SMALLINT     NOT NULL,
+    [Codigo]    VARCHAR (4)  NOT NULL,
+    [Descricao] VARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_Pacote] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 100, DATA_COMPRESSION = PAGE)
+);
+

@@ -1,0 +1,18 @@
+﻿CREATE TABLE [dbo].[PAGTO_AUTO_1] (
+    [F1]  NVARCHAR (255) NULL,
+    [F2]  NVARCHAR (255) NULL,
+    [F3]  NVARCHAR (255) NULL,
+    [F4]  NVARCHAR (255) NULL,
+    [F5]  NVARCHAR (255) NULL,
+    [F6]  NVARCHAR (255) NULL,
+    [F7]  NVARCHAR (255) NULL,
+    [F8]  NVARCHAR (255) NULL,
+    [F9]  NVARCHAR (255) NULL,
+    [F10] NVARCHAR (255) NULL,
+    [F11] NVARCHAR (255) NULL,
+    [F12] FLOAT (53)     NULL,
+    [F13] FLOAT (53)     NULL,
+    [F14] FLOAT (53)     NULL,
+    [F15] FLOAT (53)     NULL
+);
+

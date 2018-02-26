@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[vw_ComissaoAuto_temp] (
+    [ID]                     BIGINT          NOT NULL,
+    [PercentualCorretagem]   DECIMAL (5, 2)  NULL,
+    [ValorCorretagem]        DECIMAL (38, 6) NULL,
+    [ValorBase]              DECIMAL (38, 6) NULL,
+    [ValorComissaoPAR]       DECIMAL (38, 6) NULL,
+    [ValorRepasse]           DECIMAL (38, 6) NULL,
+    [DataCompetencia]        DATE            NULL,
+    [DataRecibo]             DATE            NULL,
+    [NumeroRecibo]           INT             NULL,
+    [NumeroEndosso]          INT             NULL,
+    [NumeroParcela]          SMALLINT        NULL,
+    [DataCalculo]            DATE            NULL,
+    [DataQuitacaoParcela]    DATE            NULL,
+    [TipoCorretagem]         TINYINT         NULL,
+    [CodigoSubgrupoRamoVida] INT             NULL,
+    [NumeroProposta]         VARCHAR (20)    NULL,
+    [NumeroContrato]         VARCHAR (24)    NULL,
+    [CodigoProduto]          VARCHAR (5)     NOT NULL,
+    [Repasse]                BIT             NULL,
+    [IDEmpresa]              SMALLINT        NOT NULL,
+    [Empresa]                VARCHAR (100)   NOT NULL,
+    [IDOperacao]             TINYINT         NULL
+);
+

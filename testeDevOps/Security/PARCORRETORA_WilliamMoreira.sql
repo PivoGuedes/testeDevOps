@@ -1,0 +1,2 @@
+﻿CREATE USER [PARCORRETORA\WilliamMoreira] FOR LOGIN [PARCORRETORA\williammoreira];
+

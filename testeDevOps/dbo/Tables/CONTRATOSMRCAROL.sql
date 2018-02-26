@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[CONTRATOSMRCAROL] (
+    [NumeroContrato] VARCHAR (24) NOT NULL
+);
+

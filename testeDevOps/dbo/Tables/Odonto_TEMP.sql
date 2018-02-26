@@ -1,0 +1,78 @@
+﻿CREATE TABLE [dbo].[Odonto_TEMP] (
+    [ID]                     INT           NOT NULL,
+    [NOME_SUBESTIPULANTE]    VARCHAR (200) NULL,
+    [CODIGO_SEGURADO]        VARCHAR (50)  NULL,
+    [CPF_SEGURADO]           VARCHAR (14)  NULL,
+    [CPF_TITULAR]            VARCHAR (14)  NULL,
+    [NOME_SEGURADO]          VARCHAR (150) NULL,
+    [ELEGIBILIDADE_SEGURADO] VARCHAR (50)  NULL,
+    [SITUACAO_SEGURADO]      VARCHAR (50)  NULL,
+    [DATA_CANCELAMENTO]      DATE          NULL,
+    [GRAU_PARENTESCO]        VARCHAR (50)  NULL,
+    [DATA_NASCIMENTO]        DATE          NULL,
+    [DATA_ADESAO]            DATE          NULL,
+    [SEXO]                   VARCHAR (30)  NULL,
+    [NUMERO_PROPOSTA]        VARCHAR (50)  NULL,
+    [ESTADO_CIVIL]           VARCHAR (50)  NULL,
+    [FORMA_PAGAMENTO]        VARCHAR (50)  NULL,
+    [MODALIDADE]             VARCHAR (50)  NULL,
+    [DDD_TELEFONE]           VARCHAR (50)  NULL,
+    [TELEFONE_1]             VARCHAR (50)  NULL,
+    [TIPO_TELEFONE_1]        VARCHAR (50)  NULL,
+    [TELEFONE_2]             VARCHAR (50)  NULL,
+    [TIPO_TELEFONE_2]        VARCHAR (50)  NULL,
+    [TELEFONE_3]             VARCHAR (50)  NULL,
+    [TIPO_TELEFONE_3]        VARCHAR (50)  NULL,
+    [CEP]                    VARCHAR (50)  NULL,
+    [LOGRADOURO]             VARCHAR (200) NULL,
+    [NUMERO]                 VARCHAR (200) NULL,
+    [COMPLEMENTO]            VARCHAR (200) NULL,
+    [BAIRRO]                 VARCHAR (200) NULL,
+    [LOCALIDADE]             VARCHAR (200) NULL,
+    [UF]                     VARCHAR (50)  NULL,
+    [EMAIL]                  VARCHAR (200) NULL,
+    [BANCO]                  VARCHAR (150) NULL,
+    [NUMERO_AGENCIA]         VARCHAR (50)  NULL,
+    [UF_AGENCIA]             VARCHAR (50)  NULL,
+    [CODIGO_PLANO]           VARCHAR (50)  NULL,
+    [NOME_PLANO]             VARCHAR (100) NULL,
+    [INICIO_VIGENCIA]        DATE          NOT NULL,
+    [FIM_VIGENCIA]           DATE          NULL,
+    [VALOR_MENSAL]           VARCHAR (50)  NULL,
+    [DATA_ARQUIVO]           DATE          NOT NULL,
+    [NOME_ARQUIVO]           VARCHAR (150) NOT NULL
+);
+
+
+GO
+CREATE NONCLUSTERED INDEX [idx_ConsignadoCPFSegurado_TEMP]
+    ON [dbo].[Odonto_TEMP]([CPF_SEGURADO] ASC);
+
+
+GO
+CREATE NONCLUSTERED INDEX [idx_ConsignadoCPFTitular_TEMP]
+    ON [dbo].[Odonto_TEMP]([CPF_TITULAR] ASC);
+
+
+GO
+CREATE NONCLUSTERED INDEX [idx_Consignado_Data_TEMP]
+    ON [dbo].[Odonto_TEMP]([CPF_SEGURADO] ASC)
+    INCLUDE([DATA_ADESAO]);
+
+
+GO
+CREATE NONCLUSTERED INDEX [ncl_idx_numprp_odonto]
+    ON [dbo].[Odonto_TEMP]([NUMERO_PROPOSTA] ASC)
+    INCLUDE([NOME_SUBESTIPULANTE], [CODIGO_SEGURADO], [CPF_SEGURADO], [NOME_SEGURADO], [ELEGIBILIDADE_SEGURADO], [SITUACAO_SEGURADO], [GRAU_PARENTESCO], [SEXO], [ESTADO_CIVIL], [MODALIDADE], [CODIGO_PLANO], [INICIO_VIGENCIA], [FIM_VIGENCIA], [VALOR_MENSAL], [DATA_ARQUIVO], [NOME_ARQUIVO]);
+
+
+GO
+CREATE NONCLUSTERED INDEX [idx_Consignado_DataArquivo_TEMP]
+    ON [dbo].[Odonto_TEMP]([CPF_SEGURADO] ASC, [DATA_ARQUIVO] ASC);
+
+
+GO
+CREATE NONCLUSTERED INDEX [idx_Consignado_GrauParentesco_TEMP]
+    ON [dbo].[Odonto_TEMP]([GRAU_PARENTESCO] ASC)
+    INCLUDE([DATA_ADESAO], [NUMERO_PROPOSTA], [FIM_VIGENCIA], [VALOR_MENSAL], [DATA_ARQUIVO], [NOME_ARQUIVO], [CPF_TITULAR]);
+

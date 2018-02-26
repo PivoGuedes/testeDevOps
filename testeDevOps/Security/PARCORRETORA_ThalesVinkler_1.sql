@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [PARCORRETORA\ThalesVinkler]
+    AUTHORIZATION [PARCORRETORA\ThalesVinkler];
+

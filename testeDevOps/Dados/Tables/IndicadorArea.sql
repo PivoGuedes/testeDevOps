@@ -1,0 +1,6 @@
+﻿CREATE TABLE [Dados].[IndicadorArea] (
+    [ID]        TINYINT      NOT NULL,
+    [Descricao] VARCHAR (30) NULL,
+    CONSTRAINT [PK_IndicadorArea] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 100, DATA_COMPRESSION = PAGE)
+);
+

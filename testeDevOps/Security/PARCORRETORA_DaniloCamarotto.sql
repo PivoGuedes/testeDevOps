@@ -1,0 +1,2 @@
+﻿CREATE USER [PARCORRETORA\DaniloCamarotto] FOR LOGIN [PARCORRETORA\DaniloCamarotto];
+

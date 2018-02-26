@@ -1,0 +1,4 @@
+﻿CREATE PARTITION FUNCTION [_dta_pf__9987](TINYINT)
+    AS RANGE
+    FOR VALUES (1, 2, 3, 4, 5, 8);
+

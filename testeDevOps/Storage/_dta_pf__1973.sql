@@ -1,0 +1,4 @@
+﻿CREATE PARTITION FUNCTION [_dta_pf__1973](DATE)
+    AS RANGE
+    FOR VALUES ();
+

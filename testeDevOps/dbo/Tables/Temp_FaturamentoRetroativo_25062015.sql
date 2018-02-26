@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[Temp_FaturamentoRetroativo_25062015] (
+    [CodigoFilial]           VARCHAR (50)    NULL,
+    [CodigoProdutor]         VARCHAR (50)    NULL,
+    [NumeroApolice]          VARCHAR (50)    NULL,
+    [NumeroEndosso]          VARCHAR (50)    NULL,
+    [NumeroParcela]          SMALLINT        NULL,
+    [NumeroBilhete]          VARCHAR (50)    NULL,
+    [NumeroCertificado]      VARCHAR (50)    NULL,
+    [OcorrenciaHistorico]    VARCHAR (50)    NULL,
+    [TipoCorretagem]         VARCHAR (50)    NULL,
+    [CodigoOperacao]         VARCHAR (50)    NULL,
+    [CodigoRamoFracionado]   VARCHAR (50)    NULL,
+    [ValorBase]              DECIMAL (19, 2) NULL,
+    [PercentualCorretagem]   VARCHAR (50)    NULL,
+    [ValorCorretagem ]       DECIMAL (19, 2) NULL,
+    [DataRecibo]             VARCHAR (50)    NULL,
+    [NumeroRecibo]           VARCHAR (50)    NULL,
+    [CodigoFilialProposta]   VARCHAR (50)    NULL,
+    [CodigoSubgrupoRamoVida] VARCHAR (50)    NULL,
+    [CodigoProduto]          VARCHAR (10)    NULL,
+    [CodigoPontoVenda]       VARCHAR (50)    NULL,
+    [DataCalculo]            VARCHAR (50)    NULL,
+    [DataQuitacaoParcela]    VARCHAR (50)    NULL,
+    [NumeroProposta]         VARCHAR (50)    NULL,
+    [NomeSegurado]           VARCHAR (200)   NULL
+);
+

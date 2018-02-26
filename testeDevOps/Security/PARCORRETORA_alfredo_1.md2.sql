@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [PARCORRETORA\alfredo.md2]
+    AUTHORIZATION [PARCORRETORA\alfredo.md2];
+

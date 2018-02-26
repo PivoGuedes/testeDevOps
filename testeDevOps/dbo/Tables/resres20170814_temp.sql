@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[resres20170814_temp] (
+    [ID Cliente]        VARCHAR (50)   NULL,
+    [CPF]               VARCHAR (11)   NULL,
+    [Numero Apolice]    VARCHAR (255)  NULL,
+    [Nome Completo]     VARCHAR (255)  NULL,
+    [Primeiro Nome]     VARCHAR (255)  NULL,
+    [Data Nascimento]   DATE           NULL,
+    [Data Fim Vigencia] DATE           NULL,
+    [Exclusivo]         VARCHAR (21)   NOT NULL,
+    [Nova Proposta]     VARCHAR (8000) NULL,
+    [Premio]            VARCHAR (255)  NULL,
+    [Parcelas]          VARCHAR (255)  NULL,
+    [Valor por Parcela] VARCHAR (255)  NULL,
+    [Codigo de Barras]  VARCHAR (100)  NULL,
+    [Tipo Renovacao]    VARCHAR (15)   NOT NULL,
+    [Produto]           VARCHAR (30)   NULL,
+    [Data Vencimento]   DATE           NULL,
+    [EmailAdress]       NTEXT          NULL,
+    [Telefone]          VARCHAR (13)   NULL,
+    [Locale]            VARCHAR (2)    NOT NULL,
+    [COD_CAMPANHA]      VARCHAR (20)   NULL,
+    [NOME_CAMPANHA]     VARCHAR (100)  NULL,
+    [COD_MAILING]       TEXT           NULL,
+    [DATA_MAILING]      DATETIME2 (3)  NOT NULL
+);
+

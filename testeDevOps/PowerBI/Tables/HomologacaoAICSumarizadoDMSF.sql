@@ -1,0 +1,27 @@
+﻿CREATE TABLE [PowerBI].[HomologacaoAICSumarizadoDMSF] (
+    [IDAICSumarizadoDMSF]      INT           IDENTITY (1, 1) NOT NULL,
+    [ChaveUnicaAIC]            VARCHAR (200) NULL,
+    [IDAIC]                    VARCHAR (18)  NULL,
+    [CodigoAgencia]            VARCHAR (10)  NULL,
+    [Agencia]                  VARCHAR (255) NULL,
+    [TipoUnidade]              VARCHAR (20)  NULL,
+    [Ano]                      INT           NULL,
+    [Mes]                      INT           NULL,
+    [DataReferencia]           DATE          NULL,
+    [QtdEmissoes_DM]           INT           NULL,
+    [QtdEmissoes_SF]           INT           NULL,
+    [VerificaQtdEmissoes]      INT           NULL,
+    [QtdVendas_DM]             INT           NULL,
+    [QtdVendas_SF]             INT           NULL,
+    [VerificaQtdVendas]        INT           NULL,
+    [QtdRegistro_DM]           INT           NULL,
+    [QtdRegistro_SF]           INT           NULL,
+    [VerificaQtdRegistro]      INT           NULL,
+    [DataArquivo]              DATE          NULL,
+    [ImagemValidacao]          VARCHAR (200) NULL,
+    [StatusValidacao]          VARCHAR (20)  NULL,
+    [DataAtualizacaoValidador] DATETIME      NULL,
+    [DataFimEnvio]             DATETIME      NULL,
+    PRIMARY KEY CLUSTERED ([IDAICSumarizadoDMSF] ASC) ON [PRIMARY]
+);
+

@@ -1,0 +1,9 @@
+﻿CREATE TABLE [Dados].[Cargo] (
+    [ID]           SMALLINT     IDENTITY (1, 1) NOT NULL,
+    [ClasseCargo]  SMALLINT     NULL,
+    [Cargo]        VARCHAR (70) NULL,
+    [DataCadastro] DATETIME     DEFAULT (getdate()) NULL,
+    CONSTRAINT [PK_DadosCargo_ID] PRIMARY KEY CLUSTERED ([ID] ASC) WITH (FILLFACTOR = 100, DATA_COMPRESSION = PAGE),
+    UNIQUE NONCLUSTERED ([Cargo] ASC) WITH (FILLFACTOR = 100, DATA_COMPRESSION = PAGE)
+);
+
