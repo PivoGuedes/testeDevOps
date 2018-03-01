@@ -7,6 +7,7 @@
     [DataFimProcessamento]    DATETIME2 (7) NULL,
     [DataInicioProcessamento] DATETIME2 (7) NULL,	
 	[Teste]					BIT NULL,
-	[TESTE2] bit null
+	[TESTE2] bit null,
+	[TESTE3] bit null
 );
 
